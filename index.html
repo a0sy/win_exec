@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>win_exec</title>
+  <script src="node_modules/vue/dist/vue.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+  <div id="demo">
+    <input type="text" v-model="command">
+    <button v-on:click="execCommand">run</button>
+    <pre class="output">
+      {{ output }}
+    </pre>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
